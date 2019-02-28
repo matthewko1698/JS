@@ -20,7 +20,9 @@
       d3.select("#reset").on("click", function() {
 	         circle
 		         .transition()
-		         .attr("cx", 100);
+		         .attr("cx", 100)
+             .attr('r',30)
+             .style('fill',"black");
       });
       d3.select("#start").on("click", function() {
 	         circle
