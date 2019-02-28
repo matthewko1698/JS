@@ -14,7 +14,7 @@
       d3.select("body").append("ul").selectAll('li').data(names).enter().append('li').text(function(d){
         return d;
       })
-      d3.select('body').append("h2").text("Best Animals Ever")
+      d3.select('body').append("h2").text("Extra svg Animation")
       var c = d3.select('body').append("svg").attr("width",500).attr("height",200);
       var circle = c.append('circle').attr('cx',50).attr('cy',100).attr('r',30).style('fill','black');
       d3.select("#reset").on("click", function() {
