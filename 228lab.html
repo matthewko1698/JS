@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src='d3.js'>
+
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var candidatemaker = function(name,sex,party,age) {
+        return{
+        name:name,
+        sex:sex,
+        party:party,
+        age:age
+      }
+      }
+      var data=[
+      candidatemaker("Name","Sex","Party","Age"),
+      candidatemaker("Elizabeth Warren","female","Democrat","69"),
+      candidatemaker("Donald Trump","male","Republican","72"),
+      candidatemaker("Cory Booker","male","Democrat","49"),
+      candidatemaker("Kamala Harris", "female","Democrat","54"),
+      candidatemaker("Howard Schultz",'male','Independent','65'),
+      candidatemaker("Bill Weld",'male','Republican','73')
+      ]
+      d3.select('body').append('h1').text('Presidential Candidates').style('text-align','center')
+      var table = d3.select('body').append('table');
+      var rows = table.selectAll("tr").data(data).enter().append('tr');
+
+      rows.append("td").text(function(d){return d.name})
+                       .style('background',function(d){
+                         if(d.name=='Name'){return '#dcdcdc'}
+                       })
+                       .style('font-weight','bold');
+                       // .style('font-weight',function(d){
+                       //   if(d.name=='Name'){return ('bold')
+                       // });
+
+      rows.append("td").text(function(d){return d.sex})
+                        .style('background',function(d){
+                          if(d.sex=="male"){return '#5BDFEE'}
+                          if(d.sex=="female"){return '#F9AEF3'}
+                          if(d.sex=='Sex'){return '#dcdcdc'}
+                          })
+                          .style('font-weight',function(d){
+                            if(d.sex=='Sex'){return 'bold'}
+                          });
+
+
+      rows.append("td").text(function(d){return d.party})
+                       .style('background',function(d){
+                          if(d.party=='Republican'){return '#de2828'}
+                          if(d.party=='Democrat'){return '#4a4fff'}
+                          if(d.party=='Independent'){return "grey"}
+                          if(d.party=='Party'){return '#dcdcdc'}
+                        })
+                        .style('font-weight',function(d){
+                          if(d.party=='Party'){return 'bold'}
+                        });
+      rows.append("td").text(function(d){return d.age})
+                        .style('background',function(d){
+                          if(Number(d.age)>60){return '#da6f13'}
+                          if(Number(d.age)<=60){return '#52b122'}
+                          if(d.age=='Age'){return '#dcdcdc'}
+                        })
+                        .style('font-weight',function(d){
+                          if(d.age=='Age'){return 'bold'}
+                        });
+
+
+      table.style('border',"2px black double")
+      table.style('width','40%').style('margin','auto').style('margin-top','5%')
+      d3.selectAll('td').style('border','3px black solid').style('padding','10px')
+
+    </script>
+  </body>
+</html>
