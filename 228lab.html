@@ -73,6 +73,21 @@
       table.style('width','40%').style('margin','auto').style('margin-top','5%')
       d3.selectAll('td').style('border','3px black solid').style('padding','10px')
 
+      d3.select('body').append('h1').text("Notes").attr('width','40%').style('margin','auto')
+      .style('margin-top','25px').style('display','block');
+
+      var ul =d3.select('body').append('ul');
+      ul.append('li').text('Data has 4 attributes');
+      ul.append('li').text('separate td for each part of data');
+      var l =ul.append('li').text('styles in JS depending on what is in cell');
+      var u2 = l.append('ul');
+      u2.append('li').text('pink for female, blue for male');
+      u2.append('li').text('Red for Republican, Blue for Democrat,Grey for Independent');
+      u2.append('li').text('orange for above 60 years old, green for below');
+      u2.append('li').text("various text styles for headers and names, and borders");
+      u2.append('li').text('this list done in JS as well <3');
+
+      d3.select('ul').style('font-size','1.5em');
     </script>
   </body>
 </html>
