@@ -2,20 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <style media="screen">
-      @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Poiret+One|Questrial');
-      .one, .two{
+
+      @import url('https://fonts.googleapis.com/css?family=KoHo');
+
+      .one, .two, .three, .notes{
         margin: auto;
-        width: 40%;
+        width: 60%;
         padding:20px;
-        display: inline-block;
-        vertical-align: top;
-        font-family: Questrial;
+        display: block;
+        /* vertical-align: top; */
+        font-family: KoHo;
         line-height: 1.5em;
         margin-left: 25px;
         font-size: 1.5em;
       }
+      img{
+        width:100%;
+        display:block;
+      }
+
       h1{
-        font-family: Questrial;
+        font-family: KoHo;
         width:40%;
         margin:auto;
         font-size: 3.5em;
@@ -51,8 +58,49 @@
     <div class="two">
       <h2>II</h2>
       <p>
-         
+         There are a few important aspects of encoding data visually. The first is definitely
+         what type of data you are trying to convey. Choosing the correct form
+         to display the data is a good first step in creating a visualization.
+         If the dataset elements are part of a whole, a graph with area might be
+         easier for the eyes to generalize, while data that changes over time
+         may not be so great. See images:
+         <br><br>
+         <img src="badpie.png" alt="">
+         <img src="line.png" alt="">
+         <br><br>
+         It is very hard to decipher anything from the pie chart on first glance,
+         and may be worse then describing how the data changes over time in words.
+         The line chart does show how the data changes very easily over a period of time.
+         <br><br>
+         <img src="area.png" class='a' alt="">
+         <br><br>
+         The mapping, however, does show which years had the highest socks per capita.
+         Cairo makes it clear that your choice is not clear until you try out
+         different types of visualizations. Cairo stresses how different graphics
+         complete different goals.
       </p>
+    </div>
+    <div class="three">
+      <h2>III</h2>
+      <p>
+         The first trade off that Cairo explained was between details and a general picture.
+         Sometimes visualizations have to choose between the two, and different
+         choices for the form can strike a balance between the two. Sometimes,
+         choosing baselines for the data can lead to confusion for the viewer, but
+         a 0 baseline can sometimes lead to useless empty space. Cairo speaks
+         about the conventions to many types of visualizations and how new uses
+         can lead to great ones, but also speaks about the reality that viewers may
+         not understand a visualization perfectly. There are tradeoffs to using a
+         classic visual form versus a newer exciting one, becuase of the commonality
+         of some and automatic associations with the old.
+      </p>
+    </div>
+    <div class="notes">
+      <h2>Notes</h2>
+      <ul>
+        <li>Met Requirements</li>
+        <li>Included extra figures to support explanations</li>
+      </ul>
     </div>
   </body>
 </html>
