@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+      @import url('https://fonts.googleapis.com/css?family=KoHo');
+
+      .one, .two, .three, .four, .notes{
+        margin: auto;
+        width: 60%;
+        padding:20px;
+        display: block;
+        /* vertical-align: top; */
+        font-family: KoHo;
+        line-height: 1.5em;
+        margin-left: 25px;
+        font-size: 1.5em;
+      }
+      img{
+        width:100%;
+        display:block;
+      }
+
+      h1{
+        font-family: KoHo;
+        width:40%;
+        margin:auto;
+        font-size: 3.5em;
+      }
+      h2{
+        font-size: 3em;
+      }
+      a{
+        width:50%;
+        margin:auto;
+        font-size: 3em;
+        padding:20px;
+        margin-top: 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prep 4-4-19: Force Diagrams</h1>
+    <div class="one">
+      <h2>Dataset 1: Chemical Bonds</h2>
+      <p>
+        The first dataset that could easily be represented as a force diagram is
+        chemical structures. Specifically, I would like to be able to visualize hydrates.
+        These are structures that contain water molecules as part of their makeup.
+        Silicon Dioxide Hydrate is not only a bunch of silicon, oxygen, and hydrogen connected,
+        but the H2O in the structure actually stays together and can be removed even.
+        The nodes for this diagram can be set as the molecules or atoms. The edges
+        represent the bonds between them. The strength of these bonds will be interesting
+        because the bonds within the water molecule will be stronger than the bonds between
+        the water molecule and the silicon and oxygen. Bonds strength has been quantified by bond energy, the
+        amount of energy it takes to break the bonds.
+      </p>
+    </div>
+    <div class="two">
+      <h2>Dataset 2: Language</h2>
+        <p>
+          The second specific piece of data that can work well with force diagrams are
+          linguistic pieces of data. Every human body is able to make the same sounds from our voice
+          boxes but the environment we grow up in develops how we learn how to use it. The different
+          specific sounds we can make can be mapped by language and use throughout the world.
+          The nodes can represent the specific sounds and colors can represent what languages utilize them.
+          Then the edges can represent how close these sounds are to one another, thereby making the relationship
+          on how similar different languages are to each other with the sounds they produce. Stronger edges represent
+          strong similarities
+        </p>
+
+      </div>
+    <div class="three">
+    <h2>Dataset 3: Social Network</h2>
+      <p>
+        A social network profile dataset would fit very well with a force diagram. If we have a group of friends'
+        social media profiles, we can figure out who is following who and how often they interact with other profiles.
+        The more likes or comments another individual gives another can represent the strength
+        of the edge that will connect the two nodes, profiles in this case. Data over time can
+        show how friendships fade or grow as edges grow weaker or stronger.
+      </p>
+    </div>
+    <div class="four">
+      <h2>Dataset 4: Scheduling Conflicts</h2>
+      <p>
+        If there are hundreds of congressmen on multiple committees each, what is the
+        best way of scheduling the meetings such that the most congressmen can attend
+        each meeting? Because there is a limited amount of time in the day there is
+        only a fixed amount of schedules available and all congressmen will not be
+        able to go to every one of their committee meetings. If you make a force diagram, with
+        committee meetings as the nodes and edges representing a conflict (commitee memmber on both),
+        then you can find the best way to schedule the meetings. You could find the shortest path
+        that connects all the meetings to move them to a different day or hour. 
+            </p>
+    </div>
+    <div class="notes">
+      <h2>Notes</h2>
+      <ul>
+        <li>Met Requirements</li>
+        <li>Included 4 described datasets</li>
+      </ul>
+    </div>
+  </body>
+</html>
