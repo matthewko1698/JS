@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+      @import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+      .one, .two, .three, .four, .notes{
+        margin: auto;
+        width: 60%;
+        padding:20px;
+        display: block;
+        /* vertical-align: top; */
+        font-family: Philosopher;
+        line-height: 1.5em;
+        margin-left: 25px;
+        font-size: 1.5em;
+
+
+      }
+      img{
+        width:100%;
+        display:block;
+      }
+
+      h1{
+        font-family: Philosopher;
+        width:40%;
+        margin:auto;
+        font-size: 3.5em;
+        color:black;
+      }
+      p{
+
+      }
+      h2{
+        font-size: 2em;
+
+      }
+      a:link,a:visited{
+        width:20%;
+
+        margin:auto;
+        font-size: 1em;
+        padding:20px;
+        margin-top: 20px;
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Prep 4-23-19</h1>
+    <div class="one">
+      <h2>Maps</h2>
+      <p>Using maps for visualizations is unique because of the need to translate
+      a spherically shaped object onto a 2 dimensional screen or sheet of paper.
+      One of the largest mistakes is choosing the wrong type of projection. Because
+      different projects stretch and distort land masses different ways, areas and
+      sizes can be misleading, especially on the Mercator projection.</p>
+      <img src="map-of-world.jpg" alt="">
+      <img src="RightMap.png" alt="">
+      <p>In the first map, Alaska looks about as big as half of the continential US,
+        but comparing the true land area shows that while it is still very large,
+        it is not quite that large. If the visualization wants to, for example,
+        display the area deserts in the world and Alaska had a large proportion
+        of land where a desert existed, the type of map would need to display
+        area correctly to not overstate the land area with deserts present.
+      </p>
+    </div>
+    <div class="two">
+      <p>The second mistake that is easy to make is overlapping points with point
+        data maps. If many points overlap and contain distinct information, it might
+        be difficult to understand the map correctly.
+      </p>
+      <img src="badpoint.jpg" alt="">
+      <p>The map above shows the same type of information for each country, but
+      overlaps many of the European countries so much that no information can really
+    be gathered from this visualization in that part of the world. A better solution would
+  be to use a cartogram, so that no countries overlap but also the proportionality of the sizes
+of the points can be used as well. </p>
+    </div>
+    <div class="three">
+      <p>Another mistake that can be made with map visualizations is distorting the map
+      based on data so that it is hard to gain any insight from it. </p>
+      <img src="badcart.jpg" alt="">
+      <p>In this map it is very hard to even see that it is a map of the United States.
+         Even when you know that it is a map of the US, it is hard to distinguish
+         where states or distinguishable areas lie. Sometimes it would be easier to work
+         with more abstract shapes like circles or rectangles than distort a more accurate
+         map so that nothing can be taken from  it.
+      </p>
+    </div>
+    <div class="four">
+
+      </div>
+    <div class="notes">
+      <h2>Notes</h2>
+      <ul>
+        <li>Met Requirements</li>
+        <li>included 3 explanations</li>
+        <li>included pictures to help support argument</li>
+      </ul>
+    </div>
+  </body>
+</html>
